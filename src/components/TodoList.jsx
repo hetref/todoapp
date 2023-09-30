@@ -1,3 +1,4 @@
+/* eslint-disable */
 import TodoItem from "./TodoItem";
 
 const TodoList = ({ todos, onDelete, onComplete }) => {

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { AiFillDelete, AiOutlineCheck } from "react-icons/ai";
 
 const TodoItem = ({ todo, onDelete, onComplete, isCompleted }) => {
@@ -6,7 +7,14 @@ const TodoItem = ({ todo, onDelete, onComplete, isCompleted }) => {
       <span>{todo.text}</span>
       <div id="todoBtns">
         {isCompleted ? (
-          <AiOutlineCheck />
+          <>
+            <button className="delete" onClick={() => onDelete(todo.id)}>
+              <AiFillDelete />
+            </button>
+            <button className="done">
+              <AiOutlineCheck />
+            </button>
+          </>
         ) : (
           <>
             <button className="delete" onClick={() => onDelete(todo.id)}>

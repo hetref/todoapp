@@ -43,7 +43,6 @@ const App = () => {
             onChange={(e) => setTodoText(e.target.value)}
           />
           <button type="submit">
-            {/* <i className="fa-sharp fa-solid fa-plus"></i> */}
             <BiBookAdd />
           </button>
         </form>
