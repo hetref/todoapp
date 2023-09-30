@@ -1,8 +1,6 @@
-# React + Vite
+# Starter TODO App Using ReactJS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to create a simple TODO app using ReactJS.
+You are free to use GPT and also check the below link for App.css file.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [App.css](https://raw.githubusercontent.com/hetref/todoapp/main/src/App.css)
