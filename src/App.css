@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition-duration: 0.2s;
+}
+
+div {
+  width: 100%;
+}
+
+body {
+  background-color: #1450a3;
+  font: 14px sans-serif;
+}
+
+#mainTodoBox {
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.582);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#addTodo form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+#addTodo input {
+  width: 82%;
+  height: calc(100% - 26px);
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  padding: 10px;
+  border: #1450a3 3px solid;
+  border-radius: 10px 0 0 10px;
+}
+
+#addTodo input::placeholder {
+  opacity: 0.9;
+}
+
+#addTodo input:focus {
+  outline: none;
+}
+
+#addTodo button {
+  width: 18%;
+  height: 100%;
+  border: none;
+  background-color: #1450a3;
+  color: white;
+  cursor: pointer;
+  border: #1450a3 3px solid;
+  border-radius: 0 10px 10px 0;
+}
+
+#addTodo button:hover {
+  color: white;
+  background-color: #0d3a6b;
+  border: #0d3a6b 3px solid;
+}
+
+#addTodo button svg {
+  margin-right: 3px;
+  font-size: 30px;
+}
+
+.todoItem {
+  width: calc(100% - 20px);
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.todoItem button {
+  font-size: 15px;
+  border: none;
+  background-color: #006aff;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.todoItem button:hover {
+  background-color: #0d3a6b;
+  color: white;
+}
+
+.todoItem button.delete {
+  background-color: rgb(184, 1, 1);
+  color: white;
+}
+
+.todoItem button.delete:hover {
+  background-color: rgb(111, 0, 0);
+  color: white;
+}
+
+.todoItem.completed {
+  background-color: #1450a36e;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.todoItem.completed i {
+  margin-right: 10px;
+}
+
+#todoBtns {
+  display: flex;
+  justify-content: flex-end;
+  width: 100px;
+}
+
+hr {
+  margin: 20px 5px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  display: none;
+}
